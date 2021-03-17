@@ -22,6 +22,13 @@ function HookMouse() {
   useEffect(() => {
     console.log('useEffect called')
     window.addEventListener('mousemove', logMousePosition)
+
+    //cleaning up the component (or) removing eventListener
+    return () => {
+      console.log('component unmounting code')
+      window.removeEventListener('mousemove', logMousePosition)
+    }
+
   }, []) //we specify empty array not to call useEffect on every re-render of component, the same thing is done in class component using componentDidMount
 
   //so we mimiced the componentDidMount in class component using empty array
