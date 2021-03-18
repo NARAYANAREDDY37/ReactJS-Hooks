@@ -23,6 +23,14 @@ import ComponentQ from "./components/ComponentQ";
 import ComponentR from "./components/ComponentR"; */
 import DataFetchingOne from './components/DataFetchingOne'
 import DataFetchingTwo from './components/DataFetchingTwo'
+import ParentComponent from './components/ParentComponent'
+import Counter from './components/Counter'
+import FocusInput from './components/FocusInput'
+import ClassTimer from './components/ClassTimer'
+import HookTimer from './components/HookTimer'
+import DocTitleOne from './components/DocTitleOne'
+import DocTitleTwo from './components/DocTitleTwo'
+
 
 /* export let UserContext = React.createContext()
 export let ChannelContext = React.createContext() */
@@ -48,7 +56,14 @@ function App() {
   //let [count, dispatch] = useReducer(reducer, initialState);
   return (
     <div className="App">
-      <DataFetchingTwo/>
+      <DocTitleOne/>
+      <DocTitleTwo/>
+      {/* <HookTimer/> */}
+      {/* <ClassTimer/> */}
+      {/* <FocusInput/> */}
+      {/* <Counter/> */}
+      {/* <ParentComponent/> */}
+      {/* <DataFetchingTwo/> */}
       {/* <DataFetchingOne/> */}
     </div>
   );
